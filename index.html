@@ -322,6 +322,15 @@
       transform: scale(1.05);
     }
     
+    /* Video styling inside project card */
+    .project-image video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 0; /* handled by parent card */
+    }
+    
     .project-info {
       padding: 1.5rem;
     }
@@ -353,6 +362,7 @@
     .project-links {
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
     }
     
     /* Contact */
@@ -595,6 +605,31 @@
             </div>
             <div class="project-links">
               <a href="#" class="btn">View Live</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW: AI Triage System project card -->
+        <div class="project-card">
+          <div class="project-image">
+            <video src="triage.mp4" muted loop controls playsinline preload="metadata"></video>
+          </div>
+          <div class="project-info">
+            <h3>AI Triage System</h3>
+            <p>An intelligent hospital triage system that predicts patient deterioration using Machine Learning and automatically prioritizes emergency patients in real time. The platform combines AI prediction, clinical rules, live monitoring, emergency alerts, and dynamic queue management to support healthcare professionals.</p>
+            <div class="project-tech">
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">XGBoost</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">WebSockets</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn">Watch Demo</a>
+              <a href="#" class="btn btn-outline">Source Code</a>
+              <a href="#" class="btn btn-outline">Case Study</a>
             </div>
           </div>
         </div>
